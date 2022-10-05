@@ -7,7 +7,9 @@
 
 import UIKit
 
-class WelcomeViewController: UIViewController {
+final class WelcomeViewController: UIViewController {
+    
+    var username = ""
 
     override func viewDidLoad() {
         super.viewDidLoad()
