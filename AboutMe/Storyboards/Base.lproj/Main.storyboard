@@ -254,7 +254,7 @@
                     <navigationItem key="navigationItem" title="Yuriy Gubin" id="Amr-i5-JB7">
                         <barButtonItem key="rightBarButtonItem" title="Bio" id="Sj3-lW-hXT">
                             <connections>
-                                <segue destination="j4o-by-ubJ" kind="show" id="lFt-z3-pHc"/>
+                                <segue destination="jGw-3d-cLI" kind="show" id="MQA-ag-La7"/>
                             </connections>
                         </barButtonItem>
                     </navigationItem>
@@ -272,33 +272,39 @@
             <point key="canvasLocation" x="2389" y="-35"/>
         </scene>
         <!--Yuriy Gubin Bio-->
-        <scene sceneID="JFW-Kl-MC4">
+        <scene sceneID="Kes-8w-4AV">
             <objects>
-                <viewController id="j4o-by-ubJ" customClass="BioViewController" customModule="AboutMe" customModuleProvider="target" sceneMemberID="viewController">
-                    <view key="view" contentMode="scaleToFill" id="rPq-ax-MAW">
+                <viewController id="jGw-3d-cLI" customClass="BioViewController" customModule="AboutMe" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="LWG-G5-whU">
                         <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="zNY-Iy-9By">
-                                <rect key="frame" x="16" y="175" width="361" height="24"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="20"/>
-                                <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                <nil key="highlightedColor"/>
-                            </label>
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="F0M-Xs-UwT">
+                                <rect key="frame" x="16" y="155" width="361" height="614"/>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                <string key="text">Lorem ipsum dolor sit er elit lamet, consectetaur cillium adipisicing pecu, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Nam liber te conscient to factor tum poen legum odioque civiuda.</string>
+                                <color key="textColor" systemColor="labelColor"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                            </textView>
                         </subviews>
-                        <viewLayoutGuide key="safeArea" id="9SG-Bh-KJq"/>
+                        <viewLayoutGuide key="safeArea" id="ki6-2w-56J"/>
                         <color key="backgroundColor" white="0.66666666666666663" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <constraints>
-                            <constraint firstItem="zNY-Iy-9By" firstAttribute="top" secondItem="9SG-Bh-KJq" secondAttribute="top" constant="20" id="RKW-bg-cBY"/>
-                            <constraint firstItem="9SG-Bh-KJq" firstAttribute="trailing" secondItem="zNY-Iy-9By" secondAttribute="trailing" constant="16" id="fvf-4l-upD"/>
-                            <constraint firstItem="zNY-Iy-9By" firstAttribute="leading" secondItem="9SG-Bh-KJq" secondAttribute="leading" constant="16" id="y54-5d-TXt"/>
+                            <constraint firstItem="F0M-Xs-UwT" firstAttribute="leading" secondItem="ki6-2w-56J" secondAttribute="leading" constant="16" id="9lg-D4-D0v"/>
+                            <constraint firstItem="ki6-2w-56J" firstAttribute="trailing" secondItem="F0M-Xs-UwT" secondAttribute="trailing" constant="16" id="aqe-Kk-MYz"/>
+                            <constraint firstItem="F0M-Xs-UwT" firstAttribute="top" secondItem="ki6-2w-56J" secondAttribute="top" id="jVC-MC-bhC"/>
+                            <constraint firstItem="ki6-2w-56J" firstAttribute="bottom" secondItem="F0M-Xs-UwT" secondAttribute="bottom" id="wV2-3c-mgq"/>
                         </constraints>
                     </view>
-                    <navigationItem key="navigationItem" title="Yuriy Gubin Bio" id="Ef4-EN-Bly"/>
+                    <navigationItem key="navigationItem" title="Yuriy Gubin Bio" id="02Q-Cs-C3R"/>
+                    <connections>
+                        <outlet property="bioTextView" destination="F0M-Xs-UwT" id="SnS-NC-4Y4"/>
+                    </connections>
                 </viewController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="PuD-kf-psS" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Pds-lf-Vfi" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="3191.6030534351144" y="-35.211267605633807"/>
+            <point key="canvasLocation" x="3182" y="-35"/>
         </scene>
         <!--Tab Bar View Controller-->
         <scene sceneID="amz-8B-qki">
@@ -343,6 +349,9 @@
     </scenes>
     <resources>
         <image name="person.fill" catalog="system" width="128" height="120"/>
+        <systemColor name="labelColor">
+            <color red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </systemColor>
         <systemColor name="systemBackgroundColor">
             <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
         </systemColor>
