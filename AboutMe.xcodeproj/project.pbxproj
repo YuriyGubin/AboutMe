@@ -68,9 +68,9 @@
 		6A430B1528ECAC08000A16D4 /* AboutMe */ = {
 			isa = PBXGroup;
 			children = (
-				6A9EC3C428EDB147009F743B /* ViewControllers */,
-				6A9EC3C728EDB1A6009F743B /* Models */,
 				6A9EC3C328EDB0CA009F743B /* App */,
+				6A9EC3C728EDB1A6009F743B /* Models */,
+				6A9EC3C428EDB147009F743B /* ViewControllers */,
 				6A9EC3C528EDB176009F743B /* Storyboards */,
 				6A430B1F28ECAC09000A16D4 /* Assets.xcassets */,
 			);
