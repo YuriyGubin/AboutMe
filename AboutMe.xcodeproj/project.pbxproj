@@ -16,6 +16,9 @@
 		6A9EC3C228ED7353009F743B /* WelcomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6A9EC3C128ED7353009F743B /* WelcomeViewController.swift */; };
 		6A9EC3C928EDBD55009F743B /* UserViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6A9EC3C828EDBD55009F743B /* UserViewController.swift */; };
 		6A9EC3CB28EDC2AC009F743B /* TabBarViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6A9EC3CA28EDC2AC009F743B /* TabBarViewController.swift */; };
+		6A9EC3CD28EDCEC2009F743B /* BioViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6A9EC3CC28EDCEC2009F743B /* BioViewController.swift */; };
+		6A9EC3CF28EDEAC4009F743B /* User.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6A9EC3CE28EDEAC4009F743B /* User.swift */; };
+		6A9EC3D128EDEAD0009F743B /* Person.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6A9EC3D028EDEAD0009F743B /* Person.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -30,6 +33,9 @@
 		6A9EC3C128ED7353009F743B /* WelcomeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WelcomeViewController.swift; sourceTree = "<group>"; };
 		6A9EC3C828EDBD55009F743B /* UserViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserViewController.swift; sourceTree = "<group>"; };
 		6A9EC3CA28EDC2AC009F743B /* TabBarViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TabBarViewController.swift; sourceTree = "<group>"; };
+		6A9EC3CC28EDCEC2009F743B /* BioViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BioViewController.swift; sourceTree = "<group>"; };
+		6A9EC3CE28EDEAC4009F743B /* User.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = User.swift; sourceTree = "<group>"; };
+		6A9EC3D028EDEAD0009F743B /* Person.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Person.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -87,6 +93,7 @@
 				6A430B1A28ECAC08000A16D4 /* LoginViewController.swift */,
 				6A9EC3C128ED7353009F743B /* WelcomeViewController.swift */,
 				6A9EC3C828EDBD55009F743B /* UserViewController.swift */,
+				6A9EC3CC28EDCEC2009F743B /* BioViewController.swift */,
 				6A9EC3CA28EDC2AC009F743B /* TabBarViewController.swift */,
 			);
 			path = ViewControllers;
@@ -104,6 +111,8 @@
 		6A9EC3C728EDB1A6009F743B /* Models */ = {
 			isa = PBXGroup;
 			children = (
+				6A9EC3CE28EDEAC4009F743B /* User.swift */,
+				6A9EC3D028EDEAD0009F743B /* Person.swift */,
 			);
 			path = Models;
 			sourceTree = "<group>";
@@ -179,10 +188,13 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				6A9EC3CD28EDCEC2009F743B /* BioViewController.swift in Sources */,
 				6A430B1B28ECAC08000A16D4 /* LoginViewController.swift in Sources */,
 				6A9EC3C928EDBD55009F743B /* UserViewController.swift in Sources */,
 				6A9EC3C228ED7353009F743B /* WelcomeViewController.swift in Sources */,
+				6A9EC3CF28EDEAC4009F743B /* User.swift in Sources */,
 				6A430B1728ECAC08000A16D4 /* AppDelegate.swift in Sources */,
+				6A9EC3D128EDEAD0009F743B /* Person.swift in Sources */,
 				6A9EC3CB28EDC2AC009F743B /* TabBarViewController.swift in Sources */,
 				6A430B1928ECAC08000A16D4 /* SceneDelegate.swift in Sources */,
 			);
