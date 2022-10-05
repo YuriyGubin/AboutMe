@@ -147,7 +147,7 @@
             </objects>
             <point key="canvasLocation" x="1578" y="-35"/>
         </scene>
-        <!--Yuriy Gubin-->
+        <!--User View Controller-->
         <scene sceneID="0nQ-4Z-5uX">
             <objects>
                 <viewController id="3Sw-pn-tm8" customClass="UserViewController" customModule="AboutMe" customModuleProvider="target" sceneMemberID="viewController">
@@ -251,7 +251,7 @@
                             <constraint firstItem="XUj-dU-8rY" firstAttribute="top" secondItem="XOt-Li-Y9W" secondAttribute="bottom" constant="40" id="xvI-QS-NeT"/>
                         </constraints>
                     </view>
-                    <navigationItem key="navigationItem" title="Yuriy Gubin" id="Amr-i5-JB7">
+                    <navigationItem key="navigationItem" id="Amr-i5-JB7">
                         <barButtonItem key="rightBarButtonItem" title="Bio" id="Sj3-lW-hXT">
                             <connections>
                                 <segue destination="jGw-3d-cLI" kind="show" id="MQA-ag-La7"/>

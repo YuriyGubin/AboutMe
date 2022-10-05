@@ -9,7 +9,6 @@ import UIKit
 
 class LoginViewController: UIViewController {
 
-    
     @IBOutlet var usernameTF: UITextField!
     @IBOutlet var passwordTF: UITextField!
     
@@ -31,8 +30,6 @@ class LoginViewController: UIViewController {
             } else if let navigationVC = viewController as? UINavigationController {
                 guard let userVC = navigationVC.topViewController as? UserViewController else { return }
                 userVC.title = user.username
-            } else if let bioVC = viewController as? BioViewController {
-                bioVC.bioLabel.text = user.person.bio
             }
         }
     }

@@ -9,7 +9,6 @@ import UIKit
 
 class UserViewController: UIViewController {
     
-    
     @IBOutlet var nameLabel: UILabel!
     @IBOutlet var surnameLabel: UILabel!
     @IBOutlet var companyLabel: UILabel!
