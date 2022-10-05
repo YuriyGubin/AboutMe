@@ -9,6 +9,5 @@ struct User {
     let username = "Yuriy Gubin"
     let password = "222"
     let person = Person.getPerson()
-    
 }
 

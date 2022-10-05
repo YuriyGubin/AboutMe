@@ -155,7 +155,7 @@
                         <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="XOt-Li-Y9W">
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Unknown" translatesAutoresizingMaskIntoConstraints="NO" id="XOt-Li-Y9W">
                                 <rect key="frame" x="96.666666666666686" y="155" width="200" height="200"/>
                                 <constraints>
                                     <constraint firstAttribute="width" secondItem="XOt-Li-Y9W" secondAttribute="height" multiplier="1:1" id="suS-lG-wAf"/>
@@ -348,6 +348,7 @@
         </scene>
     </scenes>
     <resources>
+        <image name="Unknown" width="225" height="225"/>
         <image name="person.fill" catalog="system" width="128" height="120"/>
         <systemColor name="labelColor">
             <color red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
