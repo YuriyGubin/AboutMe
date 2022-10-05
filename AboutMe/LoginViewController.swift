@@ -16,6 +16,12 @@ class LoginViewController: UIViewController {
     private let username = "123"
     private let password = "123"
     
+    override func viewDidLoad() {
+        super.viewDidLoad()
+        usernameTF.text = username
+        passwordTF.text = password
+    }
+    
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
         guard let welcomeVC = segue.destination as? WelcomeViewController else { return }
         welcomeVC.username = username
@@ -25,7 +31,7 @@ class LoginViewController: UIViewController {
         super.touchesBegan(touches, with: event)
         view.endEditing(true)
     }
-
+    
     @IBAction func loginButtonPressed() {
         guard usernameTF.text == username, passwordTF.text == password else {
             showAlert(
@@ -35,12 +41,17 @@ class LoginViewController: UIViewController {
             )
             return
         }
+        performSegue(withIdentifier: "showWelcomeVC", sender: nil)
     }
     
     @IBAction func forgotButtonsPressed(_ sender: UIButton) {
         sender.tag == 0
         ? showAlert(title: "Hey there 👋", message: "Your name: \(username)")
         : showAlert(title: "Hey there 👋", message: "Your password \(password)")
+    }
+    
+    @IBAction func unwind(for segue: UIStoryboardSegue) {
+        
     }
 }
 
