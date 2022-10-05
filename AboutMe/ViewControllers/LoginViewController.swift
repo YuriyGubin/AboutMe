@@ -31,6 +31,8 @@ class LoginViewController: UIViewController {
             } else if let navigationVC = viewController as? UINavigationController {
                 guard let userVC = navigationVC.topViewController as? UserViewController else { return }
                 userVC.title = user.username
+            } else if let bioVC = viewController as? BioViewController {
+                bioVC.bioTextView.text = user.person.bio
             }
         }
     }

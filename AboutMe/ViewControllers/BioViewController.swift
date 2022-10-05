@@ -11,11 +11,14 @@ class BioViewController: UITabBarController {
 
     @IBOutlet var bioTextView: UITextView!
     
+    //private let user = User()
+    
     private let startColor = #colorLiteral(red: 0.8549019694, green: 0.250980407, blue: 0.4784313738, alpha: 1)
     private let endColor = #colorLiteral(red: 0.2392156869, green: 0.6745098233, blue: 0.9686274529, alpha: 1)
     
     override func viewDidLoad() {
         super.viewDidLoad()
         view.addGradient(topColor: startColor, bottomColor: endColor)
+
     }
 }

@@ -12,13 +12,15 @@ struct Person {
     let company: String
     let department: String
     let position: String
+    let bio: String
     
     static func getPerson() -> Person {
         Person(
-            name: "Yuriy",
-            surname: "Gubin",
-            company: "Poultry Factory Borovskaya",
-            department: "IT department",
-            position: "IT specialist")
+            name: "Юрий",
+            surname: "Губин",
+            company: "Птицефабрика Боровская",
+            department: "IT департамент",
+            position: "IT специалист",
+            bio: "Истинный айосер. Характер — нордический, выдержанный. С товарищами по чату поддерживает хорошие отношения. Безукоризненно выполняет свой ученический долг. Беспощаден к ошибкам в коде. Отличный спортсмен: бег, плавание, большой теннис. Холост. В связях, порочащих его, замечен не был. Наградами в сфере разработки приложений пока не отмечен.")
     }
 }
