@@ -12,11 +12,11 @@ class LoginViewController: UIViewController {
     @IBOutlet var usernameTF: UITextField!
     @IBOutlet var passwordTF: UITextField!
     
-    private let user = User()
+    private let user = User.getUser()
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        usernameTF.text = user.username
+        usernameTF.text = user.login
         passwordTF.text = user.password
     }
     
@@ -24,12 +24,12 @@ class LoginViewController: UIViewController {
         guard let tabBarVC = segue.destination as? UITabBarController else { return }
         guard let viewControllers = tabBarVC.viewControllers else { return }
 
-        viewControllers.forEach { viewController in
-            if let welcomeVC = viewController as? WelcomeViewController {
-                welcomeVC.name = user.username
-            } else if let navigationVC = viewController as? UINavigationController {
+        viewControllers.forEach {
+            if let welcomeVC = $0 as? WelcomeViewController {
+                welcomeVC.user = user
+            } else if let navigationVC = $0 as? UINavigationController {
                 guard let userVC = navigationVC.topViewController as? UserViewController else { return }
-                userVC.title = user.username
+                userVC.user = user
             }
         }
     }
@@ -40,7 +40,7 @@ class LoginViewController: UIViewController {
     }
     
     @IBAction func loginButtonPressed() {
-        guard usernameTF.text == user.username, passwordTF.text == user.password else {
+        guard usernameTF.text == user.login, passwordTF.text == user.password else {
             showAlert(
                 title: "Incorrect Login or Password 😎",
                 message: "Please, enter correct login and password",
@@ -53,7 +53,7 @@ class LoginViewController: UIViewController {
     
     @IBAction func forgotButtonsPressed(_ sender: UIButton) {
         sender.tag == 0
-        ? showAlert(title: "Hey there 👋", message: "Your name: \(user.username)")
+        ? showAlert(title: "Hey there 👋", message: "Your name: \(user.login)")
         : showAlert(title: "Hey there 👋", message: "Your password \(user.password)")
     }
     
